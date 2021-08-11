@@ -20,5 +20,8 @@
     <string name="shop_phone_label">Номер телефона</string>
     <string name="shop_contact_hint">Введите имя контактного лица</string>
     <string name="shop_contact_label">Имя контактного лица</string>
+<!--  Заказы  -->
+    <string name="shop_request_total_weight">Общий вес:</string>
+    <string name="shop_request_count_positions">Всего наименований:</string>
 
 </resources>

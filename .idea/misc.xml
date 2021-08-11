@@ -6,7 +6,15 @@
         <entry key="app/src/main/res/layout/activity_bake.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17708333333333334" />
         <entry key="app/src/main/res/layout/fragment_bake.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_bake_list.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_bake_list_request.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_shop.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_shop_list.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_shop_list_request.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/list_item_bake.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/list_item_bake_request.xml" value="0.9" />
+        <entry key="app/src/main/res/layout/list_item_shop.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/list_item_shop_request.xml" value="0.33" />
       </map>
     </option>
   </component>

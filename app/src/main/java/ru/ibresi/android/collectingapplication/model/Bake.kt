@@ -8,5 +8,6 @@ data class Bake(
     var name: String = "",
     var unit: String = R.string.default_unit.toString(),
     var weigh: Double = 1.0,
-    var price: Double = 1.0
+    var price: Double = 1.0,
+    var count: Double = 0.0
 )

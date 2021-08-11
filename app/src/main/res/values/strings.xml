@@ -10,7 +10,7 @@
     <string name="bake_weigh_label">Weigh, kg (if unit is pieces)</string>
     <string name="bake_price_hint">Enter a price</string>
     <string name="bake_price_label">Price</string>
-    <!--  Справочник. Магазин  -->
+<!--  Справочник. Магазин  -->
     <string name="shop_name_hint">Enter a name of shop</string>
     <string name="shop_name_label">Name shop</string>
     <string name="shop_address_hint">Enter address</string>
@@ -19,6 +19,9 @@
     <string name="shop_phone_label">Phone number</string>
     <string name="shop_contact_hint">Enter a contact person name</string>
     <string name="shop_contact_label">Contact person name</string>
+<!--  Заказы  -->
+    <string name="shop_request_count_positions">Count of positions:</string>
+    <string name="shop_request_total_weight">Total weight:</string>
 
 
 </resources>

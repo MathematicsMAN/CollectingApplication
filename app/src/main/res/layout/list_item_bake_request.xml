@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/bake_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_name"
+        app:layout_constraintEnd_toStartOf="@id/bake_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Bake name for example" />
+
+    <TextView
+        android:id="@+id/bake_weigh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_text_recyclerview"
+        android:textSize="@dimen/text_size_property"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bake_name"
+        tools:text="2.3" />
+
+    <TextView
+        android:id="@+id/bake_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_property"
+        app:layout_constraintStart_toEndOf="@id/bake_weigh"
+        app:layout_constraintTop_toBottomOf="@id/bake_name"
+        tools:text="шт." />
+
+    <TextView
+        android:id="@+id/bake_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_text_recyclerview"
+        android:textSize="@dimen/text_size_property"
+        app:layout_constraintStart_toEndOf="@id/bake_unit"
+        app:layout_constraintTop_toBottomOf="@id/bake_name"
+        app:layout_constraintEnd_toStartOf="@id/bake_count"
+        tools:text="20.3 руб." />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toStartOf="@id/plus_button" />
+
+    <ImageView
+        android:id="@+id/plus_button"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/ic_input_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/minus_button"
+        app:layout_constraintTop_toBottomOf="@id/bake_weigh" />
+
+    <ImageView
+        android:id="@+id/minus_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@android:drawable/button_onoff_indicator_on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/plus_button"
+        app:layout_constraintTop_toBottomOf="@id/bake_weigh" />
+
+    <EditText
+        android:id="@+id/bake_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/plus_button"
+        tools:text="244" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
