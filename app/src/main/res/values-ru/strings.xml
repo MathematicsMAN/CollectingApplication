@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Заявки</string>
+<!--  Справочник. Выпечка  -->
+    <string name="default_unit">кг</string>
+    <string name="bake_name_hint">Введите наименование</string>
+    <string name="bake_name_label">Наименование</string>
+    <string name="bake_unit_hint">Введите ед.измерения</string>
+    <string name="bake_unit_label">Ед.измерения</string>
+    <string name="bake_weigh_hint">Введите вес поштучной выпечки</string>
+    <string name="bake_weigh_label">Вес, кг (если измеряется в шт.)</string>
+    <string name="bake_price_hint">Введите цену</string>
+    <string name="bake_price_label">Цена</string>
+<!--  Справочник. Магазин  -->
+    <string name="shop_name_hint">Введите название магазина</string>
+    <string name="shop_name_label">Название магазина</string>
+    <string name="shop_address_hint">Введите адрес</string>
+    <string name="shop_address_label">Адрес</string>
+    <string name="shop_phone_hint">Введите номер телефона</string>
+    <string name="shop_phone_label">Номер телефона</string>
+    <string name="shop_contact_hint">Введите имя контактного лица</string>
+    <string name="shop_contact_label">Имя контактного лица</string>
+
+</resources>
