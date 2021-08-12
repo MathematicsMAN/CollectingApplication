@@ -23,7 +23,8 @@ class ShopRequestFragment : Fragment() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         shop = Shop()
-        requestBakes = shop.request
+//        requestBakes = shop.request
+//        TODO Массив requestBakes получить из запроса в БД таблицы Request
     }
 
     override fun onCreateView(
@@ -59,17 +60,19 @@ class ShopRequestFragment : Fragment() {
 
     private fun countPositions(): Int {
         var count = 0
-        for (bake in requestBakes) {
-            if (bake.count > 0.001) count++
-        }
+//        for (bake in requestBakes) {
+//            if (bake.count > 0.001) count++
+//        }
+//        TODO count считать из запроса в БД
         return count
     }
 
     private fun totalWeight(): Double {
         var weight = 0.0
-        for (bake in requestBakes) {
-            weight += bake.weigh * bake.count
-        }
+//        for (bake in requestBakes) {
+//            weight += bake.weight * bake.count
+//        }
+//        TODO weight считать из запроса в БД
         return weight
     }
 }

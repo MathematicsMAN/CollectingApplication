@@ -47,7 +47,8 @@ class BakeRequestFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                bake.count = s.toString().toDouble()
+//                bake.count = s.toString().toDouble()
+//                TODO добавить учёт изменения количества bake в BakeRequestListFragment
             }
 
             override fun afterTextChanged(s: Editable?) {}

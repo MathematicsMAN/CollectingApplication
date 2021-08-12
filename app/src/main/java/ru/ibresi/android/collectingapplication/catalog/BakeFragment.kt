@@ -44,7 +44,7 @@ class BakeFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                bake.name = s.toString()
+                bake.name_b = s.toString()
             }
 
             override fun afterTextChanged(s: Editable?) {}
@@ -55,7 +55,7 @@ class BakeFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                bake.unit = s.toString()
+                bake.unit_id = s.toString()
             }
 
             override fun afterTextChanged(s: Editable?) {}
@@ -66,7 +66,7 @@ class BakeFragment : Fragment() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-                bake.weigh = if (s.toString() == "") 0.0 else s.toString().toDouble()
+                bake.weight = if (s.toString() == "") 0.0 else s.toString().toDouble()
             }
 
             override fun afterTextChanged(s: Editable?) {}

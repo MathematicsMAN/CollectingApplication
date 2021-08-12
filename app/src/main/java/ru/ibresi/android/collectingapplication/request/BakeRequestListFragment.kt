@@ -72,11 +72,12 @@ class BakeRequestListFragment : Fragment() {
 
         fun bind(bake: Bake) {
             this.bake = bake
-            nameTextView.text = this.bake.name
-            weighTextView.text = roundMe(this.bake.weigh, 3).toString()
-            unitTextView.text = this.bake.unit
+            nameTextView.text = this.bake.name_b
+            weighTextView.text = roundMe(this.bake.weight, 3).toString()
+            unitTextView.text = this.bake.unit_id
             priceTextView.text = roundMe(this.bake.price).toString() + " руб."
-            countEditText.setText(this.bake.count.toString())
+//            countEditText.setText(this.bake.count.toString())
+//            TODO Передавать значния в Request.count
             plusButton.setOnClickListener {
                 Toast.makeText(context, "Нажат плюс", Toast.LENGTH_LONG).show()
             }
@@ -86,7 +87,7 @@ class BakeRequestListFragment : Fragment() {
         }
 
         override fun onClick(v: View?) {
-            Toast.makeText(context, "${bake.name} была выбрана", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "${bake.name_b} была выбрана", Toast.LENGTH_LONG).show()
         }
     }
 

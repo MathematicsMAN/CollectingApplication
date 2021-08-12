@@ -5,10 +5,7 @@ import androidx.room.PrimaryKey
 import java.util.*
 
 @Entity
-data class Shop(
+data class Units(
     @PrimaryKey val id: UUID = UUID.randomUUID(),
-    var name_s: String = "",
-    var address: String = "",
-    var phone: String = "",
-    var contact: String = ""
+    var title: String = ""
 )

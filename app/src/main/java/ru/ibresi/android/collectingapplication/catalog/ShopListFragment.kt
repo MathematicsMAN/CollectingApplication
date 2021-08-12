@@ -65,14 +65,14 @@ class ShopListFragment : Fragment() {
 
         fun bind(shop: Shop) {
             this.shop = shop
-            nameTextView.text = this.shop.name
+            nameTextView.text = this.shop.name_s
             addressTextView.text = this.shop.address
             phoneTextView.text = this.shop.phone
             contactTextView.text = this.shop.contact
         }
 
         override fun onClick(v: View?) {
-            Toast.makeText(context, "${shop.name} был выбран", Toast.LENGTH_LONG).show()
+            Toast.makeText(context, "${shop.name_s} был выбран", Toast.LENGTH_LONG).show()
         }
     }
 
